@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('alumno_id')->constrained('alumnos')->onDelete('cascade');
             $table->foreignId('vigilante_id')->constrained('vigilantes')->onDelete('cascade');
             $table->date('fecha_multa');
-            $table->text('descripcion');
+            $table->text('descripcion'); 
             $table->boolean('pagada')->default(false);
             $table->boolean('avisado')->default(false);
             $table->foreignId('multa_id')->constrained('multas')->onDelete('cascade');

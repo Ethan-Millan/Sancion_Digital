@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('multas', function (Blueprint $table) {
             $table->id();
             $table->string('tipo_multa');
-            $table->unsignedInteger('horas_servicio');
+            $table->unsignedInteger('horas_servicio'); 
             $table->timestamps();
         });
     }
